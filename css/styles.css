@@ -1,0 +1,20 @@
+body {
+  margin: 0 0 0 0;
+
+background: #D4ECDD;
+}
+
+h1, p
+{
+  font-family: sans-serif;
+  color: #345B63;
+  font-weight: bold;
+}
+
+div {
+  display: block;
+  margin: 0 0 0 0;
+  padding: 0;
+  background-color: black;
+  height: 100px;
+}
