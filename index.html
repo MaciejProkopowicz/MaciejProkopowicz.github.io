@@ -1,30 +1,932 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
+<head>
+
     <meta charset="utf-8">
-    <meta name="description" content="I am Maciej Prokopowicz. Digital Content Creator. Welcome on my personal website !">
+    <meta name="description" content="Welcome on my  website !">
     <meta name="keywords" content="Freelancer, Programming, Personal Webiste, Marketing, Crypto, Games, GameDev, Development, NFT, Music, Production, Collectibles, Mixing, Mastering, Youtube, Tweeter, Instagram, Linkedin">
     <meta name="author" content="Maciej Prokopowicz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- JQuerry Lib -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+
+    <title>Maciej Prokopowicz | Personal Site | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets and Favicon -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Required Core Stylesheet -->
+<link rel="stylesheet" href="css/glide.core.min.css">
+
+<!-- Optional Theme Stylesheet -->
+<link rel="stylesheet" href="css/glide.theme.min.css">
+
+    
+    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="css/favicon.ico">
+    <link rel="icon" href="css/favicon0.ico">
 
-    <title>Maciej Prokopowicz | Personal Site</title>
-  </head>
 
-  <body>
-    <div class="">
-      <h1>Test Text !</h1>
-      <p>
-        This is testing text !
-      </p>
+    <!-- FlatIcon or FontAwesowe for cool icons-->
+
+    <!-- Scripts -->
+
+</head>
+
+<!-- //right click disable -->
+<body class="mybg" oncontextmenu="return true;">
+
+    <!-- ScrollBar -->
+    <div class="progressbar" id="progressBar"></div>
+    <!-- end -->
+
+    
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-xl navbar-dark nav-bg fixed-top mynav">
+        <!-- toggler button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <!-- end -->
+
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+            <img class="logoImg" src="img/MPMainAnim.gif" width="100" height="50" alt="" draggable="false">
+        </a>
+        <!-- end -->
+
+        <!-- buttons/categories -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="nav-cat navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item itemMargin">
+                    <a class="nav-link active nomargin profile activeNav" href="#">PROFILE</a>
+                </li>
+                <li class="nav-item itemMargin">
+                    <a class="nav-link active nomargin skills" href="#skillsID">SKILLS</a>
+                </li>
+                <li class="nav-item itemMargin">
+                    <a class="nav-link active nomargin projects" href="#projectsID">PROJECTS</a>
+                </li>
+                <li class="nav-item itemMargin">
+                    <a class="nav-link active nomargin contact" href="#contactID">CONTACT</a>
+                </li>
+            </ul>
+            <!-- end -->
+
+            <!-- date and time -->
+            <div class="container">
+
+                <div class="row justify-content-end">
+
+                    <div class="col-5 toRighta">
+
+                        <div id="clock" style="margin-right: 30px">
+                            <div class="span" id="h">h</div>
+                            <div class="span"> : </div>
+                            <div class="span" id="m">m</div>
+                            <div class="span"> : </div>
+                            <div class="span" id="s">s</div>
+                        </div>
+
+                        <div id="date">
+                            <div class="timerA" id="dayname"></div>
+                            <div class="timer" id="day"></div>
+                            <div class="timer" id="month"></div>
+                            <div class="timer" id="year"></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- end -->
+
+                    <!-- hire button -->
+                    <div class="col-3 toRighta">
+                        <a class="btn btn-outline-warning" href="#contactID">🛠️ HIRE ME</a>
+                    </div>
+                    <!-- end -->
+
+                </div>
+            </div>
+    </nav>
+    <!-- end NAV -->
+
+
+    <!-- Main body -->
+<!-- !!! AnchoredScrollabar looks for <section> tag and smoothly scrolls to it -->
+    <main>
+
+        <!-- Background particles + transparent texture overlay -->
+        <div id="particles-js">
+            <div class="bg-container"></div>
+        </div>
+        <!-- end -->
+
+        <!-- SECTIONS -->
+
+    <!--FirstSection - HEADER -->
+    <section class="Header" id="profile">
+
+            <!-- TYPING TEXT !!! -->
+        <div class="container topContainer section">
+              <!-- load typewriter -->
+                <div id="nameText">I am <strong><span style="
+                color:black;   
+                text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+                    ">Maciej</span>,</strong>
+                    <div id="appTyping2"></div>
+                </div>
+                
+                        
+            <!-- end of typed text -->
+
+            <!-- Image Of Me -->
+                <div class="imageToRemoveWhenScreenSize" style=" position:relative; width: 40%; height: 100%;
+                margin-left: auto; margin-right: 0;">
+
+                    <img class="glowMe" src="img/MeMainAnimNoBlur.gif" draggable="false" width="100%" alt="">
+
+                    <img class="glowMe1" src="img/MeMainOnlyBlur.png" draggable="false" width="100%" alt="">
+                    
+                </div>
+                
+            </div>
+
+
+        </section>
+        <!-- end -->
+        
+
+
+
+
+        <!-- SecondSection Skills -->
+        <!-- Add Carousel -->
+    <section class="MiddleSection" id="skills">
+
+        <div class="container-fluid middleContainerProjects filledOpacity" style="margin:0" id="skillsID">
+
+            <div class="skills" style="background-color:rgba(0, 0, 0, 0.199); width: 90%; height: 85%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border-radius: 10px;
+            margin-top: 50px;
+            " >
+         
+
+            
+            
+
+<!-- Carousel -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+
+      <div class="carousel-item">
+        <!-- Slide 4 -->
+        <div class="slideCarousel">
+        <div class="justify-content-center" style="width: 70%; height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            user-select: none;
+        
+        ">
+
+            <p style="font-size:3vw; color: yellowgreen;     margin: auto 0 0 0px;
+            text-align: center;
+            user-select: none;
+
+            ">Crypto / Blockchain / Trading:</p>
+            <img style="margin: 30px auto auto;; display: flex; 
+            width: 90%;
+            height: auto;" 
+            src="img/blockchain.png" 
+            alt="Blockchain Powers">   
+        
+        </div>
+
+
+        </div>
+        
+        <!--  -->
+      </div>
+
+
+      <div class="carousel-item">
+        <!-- Slide 3 -->
+        <div class="slideCarousel">
+
+            <div class="justify-content-center" style="width: 70%; height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            ">
+            
+                <p style="font-size:3vw; color: rgb(255, 123, 0);
+                text-align: center; user-select: none;">Music / Sound / Video / FX Production / Editing:</p>
+                <div class="imageToRemoveWhenScreenSize1">
+                <div style="user-select: none;" >
+                
+                <img style="margin: 20px auto 20px;; display: flex; 
+                width: 50%;
+                user-select: none;
+                height: auto;" 
+                
+                src="img/musicSlidemini.png" 
+                alt="Production Powers">
+                </div>   
+                <iframe style="margin:auto; border-radius: 10px;" src="https://open.spotify.com/embed/artist/5xCmMtbkfFeiq5FLxIg705?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
+            </div>
+
+        </div>
+        <!--  -->
+      </div>
+
+      <div class="carousel-item">
+        
+        <!-- Slide 2 -->
+        <div class="slideCarousel">
+        
+            <div class="justify-content-center" style="width: 70%; height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        
+            ">
+
+            <p style="font-size:2.5vw; color: goldenrod;     margin: auto 0 0 0px;
+            text-align: center;
+            ">3D Modeling, Animation, Desing and Image Editing:</p>
+            <img style="margin: 30px auto auto;; display: flex; 
+            width: 90%;
+            user-select: none;
+            height: auto;" 
+            src="img/designSlide.png" 
+            alt="Design Powers">   
+        
+            </div>
+
+        </div>
+        <!--  -->
+      </div>
+
+      <div class="carousel-item active">
+        
+        <!-- Slide 1 Active -->
+        <div class="slideCarousel">
+        
+            <div class="justify-content-center" style="width: 70%; height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        
+            ">
+
+            <p style="font-size:3vw; color: orange;     margin: auto 0 0 0px;
+            text-align: center;
+            ">Game / App / Web Development:</p>
+            <img style="margin: 30px auto auto;; display: flex; 
+            width: 90%;
+            user-select: none;
+            height: auto;" 
+            src="img/devSlide.png" 
+            alt="Design Powers">   
+        
+            </div>
+
+
+
+        </div>
+        <!--  -->
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    
+    <!-- Cert Tip tooltip -->
+           <a href="#Footer" "><button type="button" 
+            class="btn btn-secondary btn-dark cardRelAnim toolTipHov" 
+            data-bs-toggle="tooltip" 
+            
+            style=" border-radius: 50px; margin: 0px 30px 60px 200px; z-index: 99;
+            width: auto; height: 5vh; display: flex;"
+            
+            data-bs-placement="top" 
+            title="" 
+            data-bs-original-title="To see certifications go to website footer and check my LinkedIn profile.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="auto" fill="yellow" class="bi bi-question-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"/>
+            </svg>
+        </button>
+    </a>
+
+  </div>
+  
+<!--  -->
+
+            </div>
+        </div>
+    </section>
+<!--  -->
+
+<!-- Next Container Projects -->
+<!-- Add Cards -->
+<section id="projects">
+        <div class="container-fluid middleContainerProjects"  style="margin:0;" id="projectsID">
+<!-- Card 1 -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-xxl-4">
+   
+    
+  
+    <div class="col" style="
+    margin: auto;
+    display: flex;
+    justify-content: center;">
+
+    <!-- Added Toast -->
+            <div class="card" id="liveToastBtn">
+                <div class="card-image" style="background: url(img/DappCard.jpg)"></div>
+                <div class="card-text">
+                  <span class="date" style="color: yellow;">RELEASE SOON</span>
+                  <h2>Minting DApp</h2>
+                  <p>Decentralized Financial Web Application Project on Solana Blockchain. Users will be able to mint NFTs, sell them or get rewards for holding !</p>
+                </div>
+                <div class="card-stats">
+                  <div class="stat">
+                    <div class="value">99%</div>
+                    <div class="type">PROGRESS</div>
+                  </div>
+                  <div class="stat myborder">
+                    <div class="value">Q4 2021</div>
+                    <div class="type">RELEASE</div>
+                  </div>
+                  <div class="stat">
+                    <div class="value">1</div>
+                    <div class="type">CPV</div>
+                  </div>
+                </div>
+              </div>
+
+    </div>
+<!-- Card 2 -->
+
+<div class="col" style="
+margin: auto;
+display: flex;
+justify-content: center;">
+
+            <a href="https://www.pantherbyte.eu" style="text-decoration: none;">
+              <div class="card cardRelAnim">
+                <div class="card-image" style="background: url(img/PantherCard.png)"></div>
+                <div class="card-text">
+                  <span class="date" style="color: yellowgreen;">RELEASED</span>
+                  <h2>Panther Byte Web</h2>
+                  <p>Web Design and Development Project. Panther Byte is company which creates Digital Content but also help others to create their vision !</p>
+                </div>
+                <div class="card-stats" style="background: crimson;">
+                  <div class="stat">
+                    <div class="value">100%</div>
+                    <div class="type">PROGRESS</div>
+                  </div>
+                  <div class="stat myborder">
+                    <div class="value">Q4 2021</div>
+                    <div class="type">RELEASE</div>
+                  </div>
+                  <div class="stat">
+                    <div class="value">1</div>
+                    <div class="type">CPV</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+ </div>
+<!-- Card 3 -->
+
+<div class="col" style="
+margin: auto;
+display: flex;
+justify-content: center;">
+<!-- Added Toast -->
+              <div class="card" id="liveToastBtn1">
+                <div class="card-image" style="background: url(img/AlbumCard.jpg)"></div>
+                <div class="card-text">
+                  <span class="date">WORK IN PROGRESS</span>
+                  <h2>Peak Of Limitless</h2>
+                  <p>Music Album Project. Eight tracks of Calm Deep House style music for chill out or uplifting dance sessions.</p>
+                </div>
+                <div class="card-stats" style="background: rgb(255, 136, 1);">
+                  <div class="stat">
+                    <div class="value">30%</div>
+                    <div class="type">PROGRESS</div>
+                  </div>
+                  <div class="stat myborder">
+                    <div class="value">Q1 2022</div>
+                    <div class="type">RELEASE</div>
+                  </div>
+                  <div class="stat">
+                    <div class="value">0</div>
+                    <div class="type">CPV:</div>
+                  </div>
+                </div>
+              </div>
+
+</div>
+<!-- Card 4 -->
+<div class="col" style="
+margin: auto;
+display: flex;
+justify-content: center;">
+<!-- Added Toast -->
+              <div class="card" id="liveToastBtn2"> 
+                <div class="card-image" style="background: url(img/GameCard.png)"></div>
+                <div class="card-text">
+                  <span class="date">WORK IN PROGRESS</span>
+                  <h2>Cipher Heroes</h2>
+                  <p>Blockchain Game Development Project. Metaverse Action RPG based in fantasy world full of interesting quests, characters, environment and immersive action !</p>
+                </div>
+                <div class="card-stats" style="background: rgb(255, 238, 0);">
+                  <div class="stat">
+                    <div class="value">10%</div>
+                    <div class="type">PROGRESS</div>
+                  </div>
+                  <div class="stat myborder">
+                    <div class="value">TBA</div>
+                    <div class="type">RELEASE</div>
+                  </div>
+                  <div class="stat">
+                    <div class="value">0</div>
+                    <div class="type">CPV:</div>
+                    <!-- CPV - Current Project Value -->
+                  </div>
+                </div>
+              </div>
+</div>
+
+
+            </div>
+        </div>
+
+<!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
+<!-- Toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="img/pbLogoLink.png" width="20px" height="20px" class="rounded me-2" style="color: orange;" alt="...">
+      <strong class="me-auto" style="font-weight: bolder;">MACIEJ:</strong>
+      <small>NOW</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      <strong>Product is not released yet !</strong> Check footer for social media to stay tuned on updates or to <a href="#contact" style="color: rgb(6, 116, 3); text-decoration: none;"><strong>contact me</strong></a>.
+    </div>
+  </div>
+
+  <div id="liveToast1" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="img/pbLogoLink.png" width="20px" height="20px" class="rounded me-2" style="color: orange;" alt="...">
+      <strong class="me-auto" style="font-weight: bolder;">MACIEJ PROKOPOWICZ:</strong>
+      <small>NOW</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      <strong>Product is not released yet !</strong> Check footer for social media to stay tuned on updates or to <a href="#contact" style="color: rgb(6, 116, 3); text-decoration: none;"><strong>contact me</strong></a>.
+    </div>
+  </div>
+
+  <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="img/pbLogoLink.png" width="20px" height="20px" class="rounded me-2" style="color: orange;" alt="...">
+      <strong class="me-auto" style="font-weight: bolder;">MACIEK:</strong>
+      <small>NOW</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      <strong>Product is not released yet !</strong> Check footer for social media to stay tuned on updates or to <a href="#contact" style="color: rgb(6, 116, 3); text-decoration: none;"><strong>contact me</strong></a>.
+    </div>
+  </div>
+
+</div>
+
+
+<!-- end Toast -->
+
+    </section>
+<!--  -->
+
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!GLIDER -->
+
+<!-- Next Container Projects -->
+<!-- Add Cards -->
+<section id="projectsTest">
+    <div class="mycontainer" id="projectsIDTest">
+
+
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+<!-- Card 1 -->
+<!-- Added Toast -->
+<img src="https://picsum.photos/200/300" alt="">
+
+                </li>
+                <li class="glide__slide">
+<!-- Card 2 -->
+
+
+
+<img src="https://picsum.photos/200/320" alt="">
+
+
+                </li>
+                <li class="glide__slide">
+<!-- Card 3 -->
+
+
+<!-- Added Toast -->
+<img src="https://picsum.photos/200/330" alt="">
+
+
+                </li>
+                <li class="glide__slide">
+<!-- Card 4 -->
+
+<img src="https://picsum.photos/200/390" alt="">
+
+
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+              </div>
+          </div>
+
+
+
+
+
+
+        
     </div>
 
-    <h1>Test Text !</h1>
-    <p>
-      This is testing text !
-    </p>
-  </body>
+<!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button> -->
+<!-- Toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast-header">
+  <img src="img/pbLogoLink.png" width="20px" height="20px" class="rounded me-2" style="color: orange;" alt="...">
+  <strong class="me-auto" style="font-weight: bolder;">MACIEJ:</strong>
+  <small>NOW</small>
+  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+</div>
+<div class="toast-body">
+  <strong>Product is not released yet !</strong> Check footer for social media to stay tuned on updates or to <a href="#contact" style="color: rgb(6, 116, 3); text-decoration: none;"><strong>contact me</strong></a>.
+</div>
+</div>
+
+<div id="liveToast1" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast-header">
+  <img src="img/pbLogoLink.png" width="20px" height="20px" class="rounded me-2" style="color: orange;" alt="...">
+  <strong class="me-auto" style="font-weight: bolder;">MACIEJ PROKOPOWICZ:</strong>
+  <small>NOW</small>
+  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+</div>
+<div class="toast-body">
+  <strong>Product is not released yet !</strong> Check footer for social media to stay tuned on updates or to <a href="#contact" style="color: rgb(6, 116, 3); text-decoration: none;"><strong>contact me</strong></a>.
+</div>
+</div>
+
+<div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+<div class="toast-header">
+  <img src="img/pbLogoLink.png" width="20px" height="20px" class="rounded me-2" style="color: orange;" alt="...">
+  <strong class="me-auto" style="font-weight: bolder;">MACIEK:</strong>
+  <small>NOW</small>
+  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+</div>
+<div class="toast-body">
+  <strong>Product is not released yet !</strong> Check footer for social media to stay tuned on updates or to <a href="#contact" style="color: rgb(6, 116, 3); text-decoration: none;"><strong>contact me</strong></a>.
+</div>
+</div>
+
+</div>
+
+
+<!-- end Toast -->
+
+</section>
+<!--  -->
+
+
+<!--  -->
+
+
+
+<!-- Next container Contact Me -->
+    <!-- Add Form -->
+    <section id="contact">
+
+        <div class="container middleContainer section" id="contactID">
+
+            <div class="contact-me">
+                
+                <div class="background">
+                    <div class="container" style="display: flex; justify-content: center;
+                    align-items: center; user-select: none;">
+                      <div class="screen">
+                        <div class="screen-header">
+                          <div class="screen-header-left">
+                            <div class="screen-header-button close"></div>
+                            <div class="screen-header-button maximize"></div>
+                            <div class="screen-header-button minimize"></div>
+                          </div>
+                          <div class="screen-header-right">
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                          </div>
+                        </div>
+                        <div class="screen-body">
+                          <div class="screen-body-item left">
+                            <div class="app-title">
+                              <span>CONTACT</span>
+                              <span>ME</span>
+                            </div>
+                            <div class="app-contact">MORE CONNECTIONS<br>OPPORTUNITIES<br>IN FOOTER BELOW<br> <span style="font-size: 20px;">👎</span></div>
+                          </div>
+                          <div class="screen-body-item">
+        <form method="post" action="https://formsubmit.co/pantherbyte.main@gmail.com" 
+                    
+                    
+                    style="width: 200px;">
+            <!-- Thank you Page after send and other formsubmit vars -->
+                    <input type="hidden" name="_next" value="https://maciejprokopowicz.github.io/thanks.html">
+                    <input type="hidden" name="_subject" value="New Message !!! Personal Site">
+                    <input type="hidden" name="_captcha" value="false">
+            <!-- end -->
+
+                            <div class="app-form">
+                              <div class="app-form-group">
+                                <input type="text" class="app-form-control" placeholder="NAME" value="" required>
+                              </div>
+                              <div class="app-form-group">
+                                <input type="email" class="app-form-control" placeholder="EMAIL" required>
+                              </div>
+                              <div class="app-form-group">
+                                <input type="tel" class="app-form-control" placeholder="CONTACT NO.">
+                              </div>
+                              <div class="app-form-group message">
+                                <textarea class="app-form-control" placeholder="MESSAGE" 
+                                
+                                style="width: 200px; height: 60px;
+                                overflow-y:scroll;
+                                 box-sizing: border-box;
+                                 resize: none;"
+                                
+                                required></textarea>
+                                          
+                              </div>
+                              <div class="app-form-group buttons">
+                                <button type="submit" class="app-form-button">SEND</button>
+            </form>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+            </div>
+        </div>
+    </section>
+<!--  -->
+            
+<!-- end -->
+
+    <!-- ThirdSection - FOOTER -->
+        <section class="Footer" id="Footer">
+            <div class="bottom-container centerClass filledOpacity">
+                <div style="margin-top: 20px; display: flex; justify-content: center;">
+        <!-- LinkedIn -->
+                <a class="footer-link linkedIn" style="margin-left: 0;" href="https://www.linkedin.com/in/maciej-prokopowicz-966903a3/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg>
+                </a>
+        <!--  -->
+
+        <!-- Github -->
+                <a class="footer-link github" href="https://github.com/MaciejProkopowicz">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                </a>
+        <!--  -->
+
+        <!-- Spotify -->
+                <a class="footer-link spotify" href="https://open.spotify.com/artist/5xCmMtbkfFeiq5FLxIg705?si=xU7n7XIpQPGDHbmO8VCE8A">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                    </svg>
+                </a>
+        <!-- -->
+
+        <!-- Twitter -->
+                <a class="footer-link twitter" href="https://twitter.com/BytePanther">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a>
+        <!--  -->
+
+        <!-- Fiverr -->
+                <a class="footer-link fiverr" href="https://www.fiverr.com/pantherbyte?public_mode=true">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 400 400"><circle cx="200" cy="200" fill="currentColor" r="200"/><g fill="black"><path d="M364.4 162.7c0-6.6-5.2-12-11.8-12-6.4 0-11.7 5.3-11.7 12 0 6.6 5.2 12 11.7 12 6.6.1 11.8-5.3 11.8-12zm-11.8 8.7c-4.5 0-8-3.8-8-8.7 0-4.8 3.5-8.6 8-8.6 4.6 0 8.2 3.8 8.2 8.6 0 4.9-3.6 8.7-8.2 8.7z"/><path d="M355.8 163.7c.6-.2 1.9-1.1 1.9-3 0-2.3-1.5-3.7-4-3.7h-5.3v11.3h3.5v-3.8h.9l1.6 3.8h3.8l-2.1-3.9c-.2-.6-.3-.7-.3-.7zm-3-1.6h-.9v-2.7h.9c.8 0 1.2.4 1.2 1.3.1.9-.4 1.4-1.2 1.4z"/><circle cx="104.6" cy="163" r="9"/><path d="M114 177.9H72.8v-2.7c0-5.3 5.3-5.4 8-5.4 3.1 0 4.5.3 4.5.3v-14.6s-2.8-.4-6.6-.4c-8.6 0-24.5 2.4-24.5 20.6v2.3h-7.5v13.5h7.5V220h-7v13.5H81V220h-8.2v-28.5h22.5V220h-7v13.5H121V220h-7zm70 0h-29.5v13.5h5l-6.4 20c-1.2 3.3-1.5 7.3-1.5 7.3h-.4s-.3-4-1.5-7.3l-6.4-20h5v-13.5h-29.5v13.5h6.2l15.4 42h22l15.4-42h6.2zm54.6 25.5c0-15.4-9.3-26.8-25.8-26.8-17.9 0-28.9 12.7-28.9 29 0 14.8 10.7 29.1 30.5 29.1 15 0 23.9-7.8 23.9-7.8l-6.8-12.9s-7.4 5.3-15.6 5.3c-5.9 0-11.5-3.1-12.9-10.2h35.2c-.1-.1.4-3.9.4-5.7zm-35.2-4.6c1-4.3 3.6-8.2 8.9-8.2 4.1 0 7 3.8 7 8.2zm114.1-8.1h-.2s.2-1.1.2-2.8V185c0-5.1-2.8-7.1-7.9-7.1h-17.5v13.5h5.2c1.5 0 2.4.9 2.4 2.4V220h-7.5v13.5h33.7V220h-7.5v-8.1c0-10.1 5-16.7 15.3-16.7 2.3 0 3.8.3 3.8.3v-18.3s-1.1-.2-2.2-.2c-8.4-.1-15.4 6.1-17.8 13.7zm-49.3 0h-.2s.2-1.1.2-2.8V185c0-5.1-2.8-7.1-7.9-7.1h-17.5v13.5h5.2c1.5 0 2.4.9 2.4 2.4V220h-7.5v13.5h33.7V220h-7.5v-8.1c0-10.1 5-16.7 15.3-16.7 2.3 0 3.8.3 3.8.3v-18.3s-1.1-.2-2.2-.2c-8.5-.1-15.5 6.1-17.8 13.7z"/></g>
+                    </svg>
+
+                </a>
+        <!--  -->
+
+        <!-- PantherByte -->
+                <a class="footer-link" href="https://www.pantherbyte.eu">
+
+                <img class="panther" src="img/pbLogoLink.png" width="24" height="24" alt="">
+
+                </a>
+        <!--  -->
+                </div>
+                
+        <!-- Author -->
+                <p class="footerText">© 2021 Maciej Prokopowicz</p>
+
+            </div>
+        </section>
+        <!-- end -->
+
+
+    </main>
+
+
+
+    <!-- Preloader -->
+
+    <div class="bg-loadingcontainer">
+        <div class='bg-transparentcontainer'>
+            <span class="loader">Loading ...</span>
+        </div>
+    </div>
+
+
+<!-- SCRIPTS -->
+
+    <!-- BootStrap Scripts -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- end -->
+
+    <!-- CustomScripts - Components -->
+    <script type="text/javascript" src="js/typ_text.js"></script>
+    <script type="text/javascript" src="js/typ_text2.js"></script>
+    <script type="text/javascript" src="js/anchoredScrollbar.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/particlesCall.js"></script>
+    <script type="text/javascript" src="js/scrollToSection.js"></script>
+
+    <script type="text/javascript" src="js/navtimer.js"></script>
+    <script type="text/javascript" src="js/navButtonSelector.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+<script>
+    const config={
+        type: 'slider',
+        perView: 2,
+        
+    }
+  new Glide('.glide', config).mount()
+</script>
+
+    <!-- end -->
+
+    <!-- Preloader -->
+    <script>
+        // prevents stay at position after refresh and forces to start at top of page
+        history.scrollRestoration = "manual";
+        // select windows and during loading dispal loader and once loaded fade out slowly
+        $(window).on("load", function() {
+            $(".bg-loadingcontainer").fadeOut("slow");
+        });
+    </script>
+    <!-- end -->
+
+    <!-- ScrollBarProgressScript -->
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            dh = $(document).height();
+            wh = $(window).height();
+            scrollPercent = (scroll / (dh - wh)) * 100;
+            $('#progressBar').css('height', scrollPercent + '%');
+        })
+    </script>
+    <!-- end -->
+
+    <!-- ScrollToElement 'A'nchored element -->
+    <script>
+        anchoredScrollBar();
+    </script>
+  
+
+<script>
+var toastTrigger = document.getElementById('liveToastBtn')
+var toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+    toast.show()
+    toastTrigger = false;
+    console.log("Card 1 click")
+    
+
+  })
+}
+</script>
+
+<script>
+    var toastTrigger1 = document.getElementById('liveToastBtn1')
+    var toastLiveExample1 = document.getElementById('liveToast1')
+    
+    if (toastTrigger1) {
+      toastTrigger1.addEventListener('click', function () {
+        var toast1 = new bootstrap.Toast(toastLiveExample1)
+    
+        toast1.show()
+        toastTrigger1 = false;
+        console.log("Card 2 click")
+      })
+    }
+    </script>
+
+<script>
+    var toastTrigger2 = document.getElementById('liveToastBtn2')
+    var toastLiveExample2 = document.getElementById('liveToast2')
+    
+    if (toastTrigger2) {
+      toastTrigger2.addEventListener('click', function () {
+        var toast2 = new bootstrap.Toast(toastLiveExample2)
+    
+        toast2.show()
+        toastTrigger2 = false;
+        console.log("Card 3 click")
+
+      })
+    }
+    </script>
+
+    <!-- show tooltip -->
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+
+<!-- Glider -->
+
+
+
+
+</body>
+
 </html>
