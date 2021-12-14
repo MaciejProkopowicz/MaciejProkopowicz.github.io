@@ -39,6 +39,7 @@ p {
   font-family: 'Barlow', sans-serif; 
   z-index: 6; 
   user-select: none;
+  animation: fadein 3s;
 }
 
 #appTyping2 {
@@ -210,9 +211,9 @@ color: orange;
     height:100%;
     left:0px;
     top:0px;
-    z-index: 9999;
+    z-index: 99;
 
-    animation: BgAnim 50s ease infinite;
+    /* animation: BgAnim 50s ease infinite; */
   }
 
 
@@ -489,10 +490,10 @@ color: orange;
 
 /* animated gradient */
 .mybg {
-  background: linear-gradient(124deg, #66612f, #323131, #494508);
-  background-size: 400% 400%;
+  background: linear-gradient(124deg, #66612f, #323131);
+  background-size: 100% 100%;
   background-attachment: fixed;
-  animation: BgAnim 50s ease infinite;
+  /* animation: BgAnim 50s ease infinite; */
 }
 
 @keyframes BgAnim {
@@ -1067,6 +1068,7 @@ h2{
 
 .screen-body {
   display: flex;
+  overflow-x: hidden;
 }
 
 .screen-body-item {
@@ -1193,4 +1195,15 @@ h2{
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+
+
+#fadeMeIn{
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

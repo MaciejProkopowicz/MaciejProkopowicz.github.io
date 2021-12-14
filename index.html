@@ -23,11 +23,13 @@
     <!-- CSS Stylesheets and Favicon -->
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Required Core Stylesheet -->
-<link rel="stylesheet" href="css/glide.core.min.css">
+<!-- <link rel="stylesheet" href="css/glide.core.min.css"> -->
 
 <!-- Optional Theme Stylesheet -->
-<link rel="stylesheet" href="css/glide.theme.min.css">
+<!-- <link rel="stylesheet" href="css/glide.theme.min.css"> -->
 
     
     
@@ -139,7 +141,7 @@
             <!-- TYPING TEXT !!! -->
         <div class="container topContainer section">
               <!-- load typewriter -->
-                <div id="nameText">I am <strong><span style="
+                <div  id="nameText">I am <strong><span style="
                 color:black;   
                 text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
                     ">Maciej</span>,</strong>
@@ -150,7 +152,8 @@
             <!-- end of typed text -->
 
             <!-- Image Of Me -->
-                <div class="imageToRemoveWhenScreenSize" style=" position:relative; width: 40%; height: 100%;
+                <div id="fadeMeIn"
+                data-aos-anchor-placement="top-center" class="imageToRemoveWhenScreenSize" style=" position:relative; width: 40%; height: 100%;
                 margin-left: auto; margin-right: 0;">
 
                     <img class="glowMe" src="img/MeMainAnimNoBlur.gif" draggable="false" width="100%" alt="">
@@ -173,9 +176,9 @@
         <!-- Add Carousel -->
     <section class="MiddleSection" id="skills">
 
-        <div class="container-fluid middleContainerProjects filledOpacity" style="margin:0" id="skillsID">
+        <div  class="container-fluid middleContainerProjects filledOpacity" style="margin:0" id="skillsID">
 
-            <div class="skills" style="background-color:rgba(0, 0, 0, 0.199); width: 90%; height: 85%;
+            <div data-aos="fade-up" data-aos-duration="3000" class="skills" style="background-color:rgba(0, 0, 0, 0.199); width: 90%; height: 85%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -239,7 +242,7 @@
                 <div class="imageToRemoveWhenScreenSize1">
                 <div style="user-select: none;" >
                 
-                <img style="margin: 20px auto 20px;; display: flex; 
+                <img style="margin: 20px auto 20px; display: flex; 
                 width: 50%;
                 user-select: none;
                 height: auto;" 
@@ -364,7 +367,7 @@
     justify-content: center;">
 
     <!-- Added Toast -->
-            <div class="card" id="liveToastBtn">
+            <div data-aos="flip-left" data-aos-duration="3000" class="card" >
                 <div class="card-image" style="background: url(img/DappCard.jpg)"></div>
                 <div class="card-text">
                   <span class="date" style="color: yellow;">RELEASE SOON</span>
@@ -396,7 +399,7 @@ display: flex;
 justify-content: center;">
 
             <a href="https://www.pantherbyte.eu" style="text-decoration: none;">
-              <div class="card cardRelAnim">
+              <div data-aos="flip-left" data-aos-duration="3000" class="card cardRelAnim">
                 <div class="card-image" style="background: url(img/PantherCard.png)"></div>
                 <div class="card-text">
                   <span class="date" style="color: yellowgreen;">RELEASED</span>
@@ -428,7 +431,7 @@ margin: auto;
 display: flex;
 justify-content: center;">
 <!-- Added Toast -->
-              <div class="card" id="liveToastBtn1">
+              <div data-aos="flip-left" data-aos-duration="2000" class="card" id="liveToastBtn">
                 <div class="card-image" style="background: url(img/AlbumCard.jpg)"></div>
                 <div class="card-text">
                   <span class="date">WORK IN PROGRESS</span>
@@ -458,7 +461,7 @@ margin: auto;
 display: flex;
 justify-content: center;">
 <!-- Added Toast -->
-              <div class="card" id="liveToastBtn2"> 
+              <div data-aos="flip-left" data-aos-duration="2000" class="card" id="liveToastBtn"> 
                 <div class="card-image" style="background: url(img/GameCard.png)"></div>
                 <div class="card-text">
                   <span class="date">WORK IN PROGRESS</span>
@@ -498,7 +501,7 @@ justify-content: center;">
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body">
-      <strong>Product is not released yet !</strong> Check footer for social media to stay tuned on updates or to <a href="#contact" style="color: rgb(6, 116, 3); text-decoration: none;"><strong>contact me</strong></a>.
+      <strong>Product is not released yet !</strong> Check footer to connect with social media and stay tuned on updates. You can alsi <a href="#contact" style="color: rgb(6, 116, 3); text-decoration: none;"><strong>contact me</strong></a>.
     </div>
   </div>
 
@@ -592,7 +595,7 @@ justify-content: center;">
 
         <div class="container middleContainer section" id="contactID">
 
-            <div class="contact-me">
+            <div data-aos="zoom-in" data-aos-duration="2000" class="contact-me">
                 
                 <div class="background">
                     <div class="container" style="display: flex; justify-content: center;
@@ -673,7 +676,7 @@ justify-content: center;">
     <!-- ThirdSection - FOOTER -->
         <section class="Footer" id="Footer">
             <div class="bottom-container centerClass filledOpacity">
-                <div style="margin-top: 20px; display: flex; justify-content: center;">
+                <div  style="margin-top: 20px; display: flex; justify-content: center;">
         <!-- LinkedIn -->
                 <a class="footer-link linkedIn" style="margin-left: 0;" href="https://www.linkedin.com/in/maciej-prokopowicz-966903a3/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -724,7 +727,7 @@ justify-content: center;">
                 </div>
                 
         <!-- Author -->
-                <p class="footerText">© 2021 Maciej Prokopowicz</p>
+                <p  class="footerText">© 2021 Maciej Prokopowicz</p>
 
             </div>
         </section>
@@ -746,6 +749,8 @@ justify-content: center;">
 
 <!-- SCRIPTS -->
 
+
+
     <!-- BootStrap Scripts -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -754,10 +759,41 @@ justify-content: center;">
 
     <!-- end -->
 
+    <!-- toast -->
+
+          <!-- show tooltip -->
+          <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+        
+    <script>
+      var toastTrigger = document.getElementById('liveToastBtn')
+      var toastLiveExample = document.getElementById('liveToast')
+      
+      if (toastTrigger) {
+        toastTrigger.addEventListener('click', function () {
+          var toast = new bootstrap.Toast(toastLiveExample)
+          toast.show()
+          toastTrigger = false;
+          console.log("Card 1 click")
+        })
+      }
+      </script>
+      
+     
+    
+<!--  -->
+
     <!-- CustomScripts - Components -->
     <script type="text/javascript" src="js/typ_text.js"></script>
     <script type="text/javascript" src="js/typ_text2.js"></script>
     <script type="text/javascript" src="js/anchoredScrollbar.js"></script>
+    <!-- ScrollToElement 'A'nchored element -->
+  
+  
     <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/particlesCall.js"></script>
     <script type="text/javascript" src="js/scrollToSection.js"></script>
@@ -765,16 +801,18 @@ justify-content: center;">
     <script type="text/javascript" src="js/navtimer.js"></script>
     <script type="text/javascript" src="js/navButtonSelector.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
-<script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> -->
+    <script>
+      anchoredScrollBar();
+  </script>
+<!-- <script>
     const config={
         type: 'slider',
         perView: 2,
         
     }
   new Glide('.glide', config).mount()
-</script>
+</script> -->
 
     <!-- end -->
 
@@ -801,66 +839,13 @@ justify-content: center;">
     </script>
     <!-- end -->
 
-    <!-- ScrollToElement 'A'nchored element -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        anchoredScrollBar();
+      AOS.init();
     </script>
   
 
-<script>
-var toastTrigger = document.getElementById('liveToastBtn')
-var toastLiveExample = document.getElementById('liveToast')
 
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-    toast.show()
-    toastTrigger = false;
-    console.log("Card 1 click")
-    
-
-  })
-}
-</script>
-
-<script>
-    var toastTrigger1 = document.getElementById('liveToastBtn1')
-    var toastLiveExample1 = document.getElementById('liveToast1')
-    
-    if (toastTrigger1) {
-      toastTrigger1.addEventListener('click', function () {
-        var toast1 = new bootstrap.Toast(toastLiveExample1)
-    
-        toast1.show()
-        toastTrigger1 = false;
-        console.log("Card 2 click")
-      })
-    }
-    </script>
-
-<script>
-    var toastTrigger2 = document.getElementById('liveToastBtn2')
-    var toastLiveExample2 = document.getElementById('liveToast2')
-    
-    if (toastTrigger2) {
-      toastTrigger2.addEventListener('click', function () {
-        var toast2 = new bootstrap.Toast(toastLiveExample2)
-    
-        toast2.show()
-        toastTrigger2 = false;
-        console.log("Card 3 click")
-
-      })
-    }
-    </script>
-
-    <!-- show tooltip -->
-<script>
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-</script>
 
 
 <!-- Glider -->
