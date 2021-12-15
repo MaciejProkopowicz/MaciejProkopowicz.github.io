@@ -735,10 +735,28 @@ color: orange;
     display: none;
   }
 
+  #nameText{
+    text-align: center;
+    font-size: 10vw;
+  }
 
+  #appTyping2 {
+    font-size: 10vw;
+  }
 
+ 
+    
 
 }
+
+.flimg{
+  width: 50%;
+}
+
+.skillsText{
+  font-size:3vw;
+}
+
 /* END medi querry */
 
 .imageToRemoveWhenScreenSize1{
@@ -1159,9 +1177,51 @@ h2{
 
 
 
-@media screen and (max-width: 520px) {
+.cryptoskillimg{
+ margin: 30px auto auto; 
+ display: flex; 
+ width: 90%;
+ height: auto; 
+}
+
+
+
+.changeDisplayImgMobile{
+  display: none;
+}
+
+@media only screen and (max-width: 520px) {
+
+  body{
+    margin: auto;
+  }
+
+  .changeDisplayImg{
+    display: none;
+  }
+
+  .changeDisplayImgMobile{
+    display: flex;
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .loader{
+    font-size: 4vw;
+  }
+  .footer-link{
+    margin-left: 20px;
+    
+  }
+
   .screen-body {
     flex-direction: column;
+  }
+
+  .mynav {
+    padding: 0 2% 0 2%;
   }
 
   .screen-body-item.left {
@@ -1182,7 +1242,24 @@ h2{
   .app-contact{
     display: none;
   }
+
+  .skillsText{
+    font-size: 7vw;
+    }
+  
+    .flimg{
+      width: 100%;
+    }
+
+   
+
+
+
 }
+
+
+
+
 
 @media screen and (max-width: 600px) {
   .screen-body {
