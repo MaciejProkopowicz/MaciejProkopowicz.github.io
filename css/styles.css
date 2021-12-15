@@ -714,14 +714,8 @@ color: orange;
   
 
 }
-/* 
-@media screen AND (max-width: 700px) {
- 
 
-  .footerText{
-    font-size: 2vw;
-  }
-} */
+
 
 @media screen AND (max-width: 1400px) {
   
@@ -1257,7 +1251,32 @@ h2{
 
 }
 
+.spotifyIframe{
+  margin:auto; 
+  border-radius: 10px;
+}
 
+@media only screen AND (max-width: 770px) {
+  p{
+    margin-top:auto;
+  }
+ 
+  .spotifyIframe{
+    margin-top: 20px; 
+    
+  }
+  .changeDisplayImg{
+    display: none;
+  }
+
+  .changeDisplayImgMobile{
+    display: flex;
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+  }
+}
 
 
 
