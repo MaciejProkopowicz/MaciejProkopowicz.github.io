@@ -1258,7 +1258,7 @@ h2{
   border-radius: 10px;
 }
 
-@media only screen AND (max-width: 770px) {
+@media only screen AND (max-width: 1024px) {
   p{
     margin-top:auto;
   }
