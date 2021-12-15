@@ -1331,3 +1331,25 @@ h2{
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+@media only screen and (max-height: 361px) {
+
+  .changeDisplayImg{
+    display: flex;
+  }
+
+  .changeDisplayImgMobile{
+    display: none;
+  }
+
+  .loader{
+    font-size: 3vw;
+  }
+ 
+  .bottom-container{
+    margin-top:100px;
+  }
+  .middleContainer{
+    margin-top: 100px;
+  }
+
+}
