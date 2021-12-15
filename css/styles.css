@@ -87,8 +87,10 @@ strong {
 
 .middleContainerProjects{
   min-height: 100vh;
+  min-width: 100vw;
+
   height: auto;
-  width: 100vw;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
