@@ -1,6 +1,11 @@
 /* Others */
 body{
-  font-family: 'Barlow', sans-serif;}
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
 
 h2{
   z-index: 5;
@@ -1222,6 +1227,7 @@ h2{
 
   body{
     margin: auto;
+    
   }
 
   .skillsBtn{
