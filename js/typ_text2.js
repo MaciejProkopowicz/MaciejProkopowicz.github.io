@@ -8,19 +8,19 @@ var typewriter = new Typewriter(appTyping2, {
 
 typewriter
   .pauseFor(2500)
-  .typeString('<span style="color:white;">a </span><span style="color: orange;">programmer</span><span style="color:white;">. 🖮</span>')
+  .typeString('<span style="color:white;">a </span><span style="color: orange;">programmer</span><span style="color:white;">. </span>')
   .pauseFor(3000)
-  .deleteChars(14)
-  .typeString('<span style="color: gold;">designer</span><span style="color:white;">. 📐</span>')
-  .pauseFor(2500)
   .deleteChars(12)
-  .typeString('<span style="color: orange;">developer</span><span style="color:white;">. 🖥️</span')
+  .typeString('<span style="color: gold;">designer</span><span style="color:white;">.</span>')
+  .pauseFor(2500)
+  .deleteChars(10)
+  .typeString('<span style="color: orange;">developer</span><span style="color:white;">.</span')
   .pauseFor(3000)
-  .deleteChars(14)
-  .typeString('<span style="color: gold;">producer</span><span style="color:white;">. 🎼</span')
+  .deleteChars(10)
+  .typeString('<span style="color: gold;">producer</span><span style="color:white;">.</span')
   .pauseFor(2500)
-  .deleteChars(12)
-  .typeString('<span style="color: yellowgreen;">cryptoman</span><span style="color:white;">. 🗠</span>')
+  .deleteChars(10)
+  .typeString('<span style="color: yellowgreen;">cryptoman</span><span style="color:white;">.</span>')
   .pauseFor(3000)
   .start();
 

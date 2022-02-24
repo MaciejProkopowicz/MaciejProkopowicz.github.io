@@ -729,6 +729,12 @@ color: orange;
   .imageToRemoveWhenScreenSize{
     
     display: none;
+        position: absolute;
+    width: 35%;
+    height: 100vh;
+    right: 102px;
+    margin-left: auto;
+    margin-right: 0;
   }
 
   #nameText{
@@ -745,12 +751,38 @@ color: orange;
 
 }
 
+/* skills button css */
+.skillsBtn{
+  background-color: gold; 
+  border-radius: 20px; 
+  width: 50%;
+  font-size: 2vw; 
+  font-family: 'Barlow';
+  margin: auto;
+  color: #000;
+  filter: drop-shadow(0 0 5px rgb(251, 255, 0));
+  border: 1px solid yellow;
+  text-align: center;
+  text-decoration: none;
+}
+
+.skillsBtn:hover{
+  background-color: rgb(208, 255, 0); 
+  border-color: greenyellow;
+  filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+
+
+}
+/*  */
+
 .flimg{
   width: 50%;
 }
 
 .skillsText{
   font-size:3vw;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 /* END medi querry */
@@ -1192,6 +1224,10 @@ h2{
     margin: auto;
   }
 
+  .skillsBtn{
+    font-size: 5vw;
+  }
+
   .changeDisplayImg{
     display: none;
   }
@@ -1307,6 +1343,7 @@ h2{
    -ms-animation: fadein 5s; /* Internet Explorer */
     -o-animation: fadein 5s; /* Opera < 12.1 */
        animation: fadein 5s;
+       
 }
 
 @keyframes fadein {
