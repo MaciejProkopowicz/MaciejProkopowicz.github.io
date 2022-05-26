@@ -788,8 +788,13 @@ color: orange;
 
 .skillsText{
   font-size:3vw;
+  font-family: 'Barlow', sans-serif;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   filter: drop-shadow(2px 4px 6px black);
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgb(25, 25, 25) 0%, rgba(0, 0, 0, 0.419) 100%);
+  border-radius: 5px;
+  padding: 4px;
 }
 
 /* END medi querry */
